@@ -2,6 +2,7 @@ language: python
 
 Python:
 - "2.7"
+- "3.6"
 install:
 - pip install -r requirments.txt
 - pip install coveralls
