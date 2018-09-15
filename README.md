@@ -1,8 +1,8 @@
 # KARIBU-FAST-FOOD-API
 
-[![Coverage Status](https://coveralls.io/repos/github/muthigani/Fast-Food-Fast-API/badge.svg?branch=develop)](https://coveralls.io/github/muthigani/Fast-Food-Fast-API?branch=develop)
+[![Build Status](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API.svg?branch=master)](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API)
 
-https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API.svg?branch=master
+[![Coverage Status](https://coveralls.io/repos/github/muthigani/Fast-Food-Fast-API/badge.svg?branch=develop)](https://coveralls.io/github/muthigani/Fast-Food-Fast-API?branch=develop)
 
 This is an api of fast food orders
 Functions: are :
