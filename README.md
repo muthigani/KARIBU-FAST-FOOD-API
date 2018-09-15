@@ -1,5 +1,6 @@
 # KARIBU-FAST-FOOD-API
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bbd174ed7eef4c3e832319e1d51c48db)](https://app.codacy.com/app/muthigani/KARIBU-FAST-FOOD-API?utm_source=github.com&utm_medium=referral&utm_content=muthigani/KARIBU-FAST-FOOD-API&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API.svg?branch=master)](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API)
 
 [![Coverage Status](https://coveralls.io/repos/github/muthigani/Fast-Food-Fast-API/badge.svg?branch=develop)](https://coveralls.io/github/muthigani/Fast-Food-Fast-API?branch=develop)
