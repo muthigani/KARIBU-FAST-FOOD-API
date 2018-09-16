@@ -4,7 +4,7 @@ Python:
 - "2.7"
 - "3.6"
 install:
-- pip install -r requirments.txt
+- pip install -r requirements.txt
 - pip install coveralls
 
 script:
