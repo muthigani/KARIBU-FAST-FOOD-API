@@ -2,15 +2,13 @@ language: python
 
 Python:
 - "2.7"
-- "3.6"
 install:
 - pip install -r requirements.txt
 - pip install coveralls
+- pip install nose
 
 script:
-- pytest --cov=tests/
-  
+- nosetests --with-coverage --cover-package=app test_views.py
 
 after_success:
-- coveralls
-
+-"coveralls"
