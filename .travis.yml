@@ -10,5 +10,4 @@ install:
 script:
 python test_views.py --with-coverage --cover-package=app 
 
-after_success:
--"coveralls"
+
