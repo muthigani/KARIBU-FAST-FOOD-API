@@ -3,14 +3,12 @@ language: python
 Python:
 - "2.7"
 - "3.6"
+
+cache:pip
+
 install:
-- pip install -r requirements.txt
-- pip install coveralls
+"pip install -r requirements.txt"
 
-script:
-python tests/api/v1/test_views2.py
+script:python tests/api/v1/test_views2.py
   
-
-after_success:
-- coveralls
 
