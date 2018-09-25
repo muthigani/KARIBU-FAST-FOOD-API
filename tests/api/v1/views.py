@@ -3,8 +3,6 @@ from flask_restful import Api, Resource, reqparse
 
 app = Flask(__name__)
 api = Api(app, prefix ='/api/v1')
-create_app = api
-
 
 
 orders = [
