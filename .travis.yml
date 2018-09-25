@@ -10,6 +10,4 @@ install:
 "pip install -r requirements.txt"
 
 script:
-python testviews2.py
-  
-
+python testviews.py
