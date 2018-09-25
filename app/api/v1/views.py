@@ -4,8 +4,11 @@ from flask_restful import Api, Resource, reqparse
 
 from app.models import orders
 
+
+
 class Order_list(Resource):
-	def get(self):
+	def get(self): """Gets all orders on the list"""
+	
 		
 		return orders, 200
 				
@@ -14,14 +17,14 @@ class Order_list(Resource):
 class Order(Resource):
 
 
-	def get(self,orderid):
+	def get(self,orderid): """ Gets specific order on the list"""
 		for order in orders:
 				if(orderid == order["orderid"]):
 						return order, 200
 						return "User not found", 404
 
 
-	def post(self,orderid):
+	def post(self,orderid): """ Place a new order """
 		parser = reqparse.RequestParser()
 		parser.add_argument("food")
 		parser.add_argument("clientname")
@@ -48,45 +51,11 @@ class Order(Resource):
 
 				}
 		orders.append(order)
-		orders = [
-{
-					 "orderid": 1,
-					 "food" : " chips",
-					 "clientname":"Nicholas",
-					 "location":"Majengo",
-					 "phone":"0722333456",
-					 "quatity": 1,
-					 "price": 100,
-					 "orderstat":"pending",
-
-				 },
-				 {
-					 "orderid": 2,
-					 "food" : " Burger Only",
-					 "clientname":"James",
-					 "location":"Mtwapa",
-					 "phone":"0722123456",
-					 "quatity": 1,
-					 "price": 200,
-					 "orderstat":"pending",
-
-				 },
-				 {
-					 "orderid": 3,
-					 "food" : " chips",
-					 "clientname":"Elvis",
-					 "location":"Kizingo",
-					 "phone":"0711234523",
-					 "quatity": 1,
-					 "price": 300,
-					 "orderstat":"pending",
-
-				 },
-				 ]
+		
 		return order, 201
 
 
-	def put(self,orderid):
+	def put(self,orderid): """update specific order in the order list"""
 		parser = reqparse.RequestParser()
 		parser.add_argument("food")
 		parser.add_argument("clientname")
