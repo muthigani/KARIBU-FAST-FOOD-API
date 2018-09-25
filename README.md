@@ -13,8 +13,23 @@
 * POST /orders  Place a new order. 
 * PUT /orders/<orderId>  Update the status of an order.
   
-## How to setup Localy
+## Installations
+* OS -Windows 10
+* Gitbash
+  
+## How to setup Locally
 * install on virtual env:
+```sh
+pip install virtual env
+```
+* install  flask:
+```sh
+pip install flask 
+```
+* install flask restful :
+```sh
+pip install flask-restful
+```
 
 
 Pivotal tracker:
