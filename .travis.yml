@@ -10,14 +10,8 @@ install:
 -pip install pytest
 
 script:
-<<<<<<< HEAD
+
 -- coverage run  --source tests/api/v1 -m pytest -v
 
 after_success:
 -coveralls
-=======
-- pytest --cov=app/tests
-
-after_success:
--coveralls
->>>>>>> 46a4aedd8619cc65852e3243585cd07d98eaa28f
