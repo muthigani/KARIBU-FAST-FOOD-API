@@ -2,11 +2,12 @@ language: python
 
 Python:
 - "2.7"
+- "3.6"
+
+cache:pip
+
 install:
-- pip install -r requirements.txt
-- pip install coveralls
+"pip install -r requirements.txt"
 
 script:
-python test_views.py --with-coverage --cover-package=app 
-
-
+python testviews.py
