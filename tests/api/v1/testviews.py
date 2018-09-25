@@ -1,7 +1,6 @@
 import unittest
 from flask import json,jsonify,request
 from views import app, Order, Order_list
-from base64 import b64encode
 
 class EndpointTest(unittest.TestCase):
     def setUp(self):
