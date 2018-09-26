@@ -8,9 +8,9 @@ Python:
 install:
 -pip install -r requirements.txt
 -pip install pytest
-
+`
 script:
-
+`
 -- coverage run  --source tests/api/v1 -m pytest -v
 
 after_success:
