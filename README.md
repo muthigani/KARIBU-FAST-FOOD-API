@@ -1,6 +1,6 @@
 # KARIBU-FAST-FOOD-API
 
-[![Build Status](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API.svg?branch=master)](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API)
+[![Build Status](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API.svg?branch=develop)](https://travis-ci.org/muthigani/KARIBU-FAST-FOOD-API)
 
 [![Coverage Status](https://coveralls.io/repos/github/muthigani/Fast-Food-Fast-API/badge.svg?branch=develop)](https://coveralls.io/github/muthigani/Fast-Food-Fast-API?branch=develop)
 
