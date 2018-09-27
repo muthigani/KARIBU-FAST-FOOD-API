@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/c8fdba67df4309915aee/maintainability)](https://codeclimate.com/github/muthigani/KARIBU-FAST-FOOD-API/maintainability)
 
-[![Coverage Status](https://coveralls.io/repos/github/muthigani/Fast-Food-Fast-API/badge.svg?branch=develop)](https://coveralls.io/github/muthigani/Fast-Food-Fast-API?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/muthigani/KARIBU-FAST-FOOD-API/badge.svg?branch=develop)](https://coveralls.io/github/muthigani/KARIBU-FAST-FOOD-API?branch=develop)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b926e48e6884ee5827d6245a23865e1)](https://www.codacy.com/app/muthigani/KARIBU-FAST-FOOD-API?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=muthigani/KARIBU-FAST-FOOD-API&amp;utm_campaign=Badge_Grade)
 
