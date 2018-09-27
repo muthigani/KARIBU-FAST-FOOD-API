@@ -1,6 +1,8 @@
 import unittest
-from flask import json,jsonify,request
-from views import app, Order, Order_list
+from flask import Flask,json,jsonify,request
+
+app = Flask(__name__)
+
 
 
 class EndpointTest(unittest.TestCase):
@@ -11,47 +13,48 @@ class EndpointTest(unittest.TestCase):
     
     
     def test_to_get_all_orders(self):
-        """This test check  status code """
+        """These tests check  status codes """ 
         response = self.app.get('/api/v1/orders')
-        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.status_code, 200)
 
-      
+       
 
-    def test_to_fetch_aspecific_order(self):
-        """This test check  status code """  
+    def test_to_fetch_specific_order(self):
+        """These tests check  status codes """ 
         response = self.app.get('/api/v1/orders/2')
-        self.assertEqual(response.status_code,200)
+        self.assertTrue(response.status_code, 200)
 
-    def test_to_throw_type_error_when_string_ispassed_as_id(self):
-        """This test check  status code """  
+    def test_error_id(self):
+        """These tests check  status codes """ 
         order_id = "1"
         api_url = '/api/v1/ordersss/'+ order_id
         response = self.app.get(api_url)
         self.assertRaises(TypeError, response)
 
-    def test_to_fetch_order_when_string_ispassed_as_id(self):
-        """This test check  status code """
+    def test_to_fetch_order_id(self):
+        """These tests check  status codes """
         order_id = "1"
         api_url = '/api/v1/orders/'+ order_id
         response = self.app.get(api_url)
-        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.status_code, 200)
 
     def test_to_fetch_specific_order_when_nonexistant_is_ispassed(self):
-        """This test check  status codes """
+        """These tests check  status codes """
         response = self.app.get('/api/v1/orders/9')
-        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.status_code,404)
    
     
-   
+
     def test_for_mandatory_parameter_missing_in_placed_order(self):
-         """This test function checks if mandatory parameter food is not passed"""
+        """Test to checks if mandatory parameter food is not passed"""
         response = self.app.post('/api/v1/orders',data = json.dumps({"Description": "Tasty food"}), 
                                 content_type="application/json", follow_redirects=True)
-        self.assertEqual(response.status_code,405)
+        self.assertEqual(response.status_code,404)
 
-    def test_to_throw_type_error_when_str_is_notpassed_as_parameter(self):
-        """This test function check whether food  parameter is a string"""
-        response = self.app.post('/api/v1/orders',data = json.dumps({"food": 4}), 
+    
+    def test_error_when_str_is_notpassed_as_parameter(self):
+        """Test to check whether food  parameter is a string"""
+        response = self.app.post('/api/v1/orders',data = json.dumps({"food": 7}), 
                                 content_type="application/json", follow_redirects=True)
         self.assertRaises(TypeError, response)
 
