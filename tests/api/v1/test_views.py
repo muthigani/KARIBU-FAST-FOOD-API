@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 
-class EndpointTest(unittest.TestCase):
+class TestingEndpoints(unittest.TestCase):
     def setUp(self):
         self.app = app.test_client()
 
@@ -13,34 +13,29 @@ class EndpointTest(unittest.TestCase):
     
     
     def test_to_get_all_orders(self):
-        """These tests check  status codes """ 
+        """These tests check  all orders """ 
         response = self.app.get('/api/v1/orders')
         self.assertTrue(response.status_code, 200)
 
        
 
-    def test_to_fetch_specific_order(self):
-        """These tests check  status codes """ 
-        response = self.app.get('/api/v1/orders/2')
+    def test_get_specific_order(self):
+        """These tests check  specific order """ 
+        response = self.app.get('/api/v1/orders/1')
         self.assertTrue(response.status_code, 200)
 
     def test_error_id(self):
-        """These tests check  status codes """ 
-        order_id = "1"
-        api_url = '/api/v1/ordersss/'+ order_id
+        """Test to check error in specific order """ 
+        orderid = "1"
+        api_url = '/api/v1/ordersss/'+ orderid
         response = self.app.get(api_url)
         self.assertRaises(TypeError, response)
 
-    def test_to_fetch_order_id(self):
-        """These tests check  status codes """
-        order_id = "1"
-        api_url = '/api/v1/orders/'+ order_id
-        response = self.app.get(api_url)
-        self.assertTrue(response.status_code, 200)
+    
 
-    def test_to_fetch_specific_order_when_nonexistant_is_ispassed(self):
-        """These tests check  status codes """
-        response = self.app.get('/api/v1/orders/9')
+    def test_nonexistant_orderid(self):
+        """Test check none existing orderid """
+        response = self.app.get('/api/v1/orders/20')
         self.assertEqual(response.status_code,404)
    
     
