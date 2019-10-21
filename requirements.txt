@@ -8,7 +8,7 @@ Jinja2==2.10
 MarkupSafe==1.0
 pytz==2018.5
 six==1.11.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 pytest==3.8.0
 
 coverage==4.5.1
